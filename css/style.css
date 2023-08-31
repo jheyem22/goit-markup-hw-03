@@ -394,10 +394,10 @@ footer > .logo {
 .section-our-team {
   background-color: var(--cloud);
   margin-top: 120px;
-  width: 1440px;
+  width: auto;
   height: 732px;
   flex-shrink: 0;
-  margin-bottom: 120px;
+  margin-bottom: 0px;
 }
 
 .container-4 {
