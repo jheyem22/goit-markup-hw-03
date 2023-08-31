@@ -12,6 +12,7 @@
   --cornflower: #e7e9fc;
   --font-family-roboto: "Roboto", sans-serif;
   --font-family-raleway: "Raleway", "sans-serif";
+  --slate: #434455;
 }
 
 h1,
@@ -98,7 +99,7 @@ body {
 }
 
 .section2 {
-  width: 1440px;
+  width: auto;
 }
 
 /* header */
@@ -166,7 +167,7 @@ footer {
   background-color: var(--navyblue);
   padding-top: 30px;
   padding-bottom: 30px;
-  width: 1440px;
+  width: auto;
   height: 312px;
   flex-shrink: 0;
   display: flex;
@@ -272,13 +273,15 @@ footer > .logo {
   gap: 8px;
   padding: 15px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 72px;
   list-style: none;
   border-radius: 4px;
-}
-
-.list-port-nav {
   justify-content: center;
+}
+.sectionport {
+  justify-content: center;
+  align-content: center;
+  width: auto;
 }
 /*1st section*/
 
@@ -290,7 +293,7 @@ footer > .logo {
   background-color: var(--background-black);
   align-content: center;
   position: center;
-  width: 1440px;
+  width: auto;
   height: 600px;
   flex-shrink: 0;
   align-items: center;
@@ -400,7 +403,7 @@ footer > .logo {
 .container-4 {
   margin-left: 156px;
   margin-right: auto;
-  width: 1440px;
+  width: auto;
   height: 732px;
 }
 
@@ -451,149 +454,65 @@ footer > .logo {
 /*PORTFOLIO*/
 
 .portfolio {
-  width: 1440px;
-  height: auto;
-  flex-shrink: 0;
-  margin-bottom: auto;
   border-bottom: 1px solid #ececec;
   display: flex;
+  width: auto;
+  height: 420px;
+  flex-shrink: 0;
+  margin-bottom: 1056px;
+  margin-top: 400px;
 }
 
-.portcontainer1 {
-  display: flex;
-  gap: 8px;
-  padding: 15px;
-  margin: 0;
-  margin-bottom: 20px;
-  list-style: none;
-  border-radius: 4px;
-}
-
-.portcontainer1 > .list {
-  display: flex;
-  /* Make a flex container multiline */
-  flex-wrap: wrap;
-  /* Set gap between rows and columns */
-  gap: 10px;
-  padding: 0;
-}
-.portcontainer1 > .list > img {
-  width: 264px;
-  height: 260px;
-  padding: 0;
-}
-.portcontainer1 > .list {
-  /*  Set the width of the elements  */
-  height: 380px;
-  width: 264px;
-  border-radius: 0px 0px 4px 4px;
-  background: var(--white, #fff);
-  padding-bottom: 32px;
-}
-
-.portcontainer1 > .list > h3 {
-  margin: 0;
-  font-family: var(--font-family-roboto);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.portcontainer1 > .list > p {
-  margin: 0;
-  font-family: var(--font-family-roboto);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.portcontainer2 {
-  margin-left: 156px;
-  margin-right: auto;
-  width: 1440px;
-  height: 732px;
-}
-
-.portcontainer2 > .list {
-  display: flex;
-  /* Make a flex container multiline */
-  flex-wrap: wrap;
-  /* Set gap between rows and columns */
-  gap: 10px;
-  padding: 0;
-}
-.portcontainer2 > .list > img {
-  width: 264px;
-  height: 260px;
-  padding: 0;
-}
-.portcontainer2 > .list {
-  /*  Set the width of the elements  */
-  height: 380px;
-  width: 264px;
-  border-radius: 0px 0px 4px 4px;
-  background: var(--white, #fff);
-  padding-bottom: 32px;
-}
-
-.portcontainer2 > .list > h3 {
-  margin: 0;
-  font-family: var(--font-family-roboto);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.portcontainer2 > .list > p {
-  margin: 0;
-  font-family: var(--font-family-roboto);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
+.portcontainer1,
+.portcontainer2,
 .portcontainer3 {
-  margin-left: 156px;
-  margin-right: auto;
-  width: 1440px;
-  height: 732px;
-}
-
-.portcontainer3 > .list {
   display: flex;
-  /* Make a flex container multiline */
-  flex-wrap: wrap;
-  /* Set gap between rows and columns */
-  gap: 10px;
-  padding: 0;
+  border-radius: 1px;
+  width: 360px;
+  height: 420px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+  margin-bottom: 48px;
+  justify-content: center;
 }
-.portcontainer3 > .list > img {
-  width: 264px;
-  height: 260px;
-  padding: 0;
-}
+.portcontainer1 > .list,
+.portcontainer2 > .list,
 .portcontainer3 > .list {
-  /*  Set the width of the elements  */
-  height: 380px;
-  width: 264px;
-  border-radius: 0px 0px 4px 4px;
-  background: var(--white, #fff);
-  padding-bottom: 32px;
+  margin-left: 24px;
+  padding: 0px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
 }
 
+.portcontainer1 > .list > img,
+.portcontainer2 > .list > img,
+.portcontainer3 > .list > img {
+  width: 360px;
+  height: 300px;
+  flex-shrink: 0;
+}
+
+.portcontainer1 > .list > h3,
+.portcontainer2 > .list > h3,
 .portcontainer3 > .list > h3 {
-  margin: 0;
+  color: var(--navyblue);
   font-family: var(--font-family-roboto);
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
+  letter-spacing: 0.4px;
+  margin: 0;
 }
 
+.portcontainer1 > .list > p,
+.portcontainer2 > .list > p,
 .portcontainer3 > .list > p {
   margin: 0;
   font-family: var(--font-family-roboto);
@@ -601,6 +520,8 @@ footer > .logo {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  color: var(--slate);
+  letter-spacing: 0.32px;
 }
 
 /*
