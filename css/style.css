@@ -75,8 +75,11 @@ body {
   color: var(--primary-text-color);
   font-weight: 400 900;
   letter-spacing: 0.32px;
+  width: 1158px;
 }
-
+address {
+  width: 1440px;
+}
 /* logo*/
 .logo {
   color: var(--iris);
@@ -94,12 +97,13 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 1440px;
 }
 
 .section2 {
-  width: auto;
+  width: 1158px;
 }
 
 /* header */
@@ -126,6 +130,7 @@ page-header
 */
 header {
   display: flex;
+  width: 1158px;
 }
 
 address {
@@ -151,7 +156,7 @@ address {
   align-items: baseline;
 }
 .container-menu {
-  margin-left: 156px;
+  margin-left: 15px;
 }
 
 .nav-menu-list .list-item:not(:last-child),
@@ -167,7 +172,7 @@ footer {
   background-color: var(--navyblue);
   padding-top: 30px;
   padding-bottom: 30px;
-  width: auto;
+  width: 1440px;
   height: 312px;
   flex-shrink: 0;
   display: flex;
@@ -177,7 +182,7 @@ footer > .logo {
   margin-bottom: 17.5px;
 }
 .logo {
-  margin-left: 156px;
+  margin-left: 15px;
 }
 .footer-text {
   text-align: left;
@@ -281,19 +286,18 @@ footer > .logo {
 .sectionport {
   justify-content: center;
   align-content: center;
-  width: auto;
+  width: 1158px;
 }
 /*1st section*/
 
-.hero-bg-hero {
+.sectionherobghero {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
   justify-content: center;
   background-color: var(--background-black);
   align-content: center;
-  position: center;
-  width: auto;
+  width: 1440px;
   height: 600px;
   flex-shrink: 0;
   align-items: center;
@@ -301,11 +305,10 @@ footer > .logo {
 
 .hero-title {
   margin-bottom: 0px;
-  margin-right: 472px;
-  margin-left: 472px;
+  margin-right: 331px;
+  margin-left: 109px;
   font-family: var(--font-family-roboto);
   color: var(--white-color);
-  width: 496px;
   text-align: center;
   font-size: 56px;
   font-weight: 700;
@@ -316,7 +319,7 @@ footer > .logo {
 /*2nd section*/
 .container-2 {
   padding: 5px;
-  margin-left: 156px;
+  margin-left: 15px;
   margin-right: auto;
   margin-top: 120px;
   margin-bottom: 120px;
@@ -365,7 +368,7 @@ footer > .logo {
 
 .container-3 {
   padding: 5px;
-  margin-left: 156px;
+  margin-left: 15px;
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 120px;
@@ -391,20 +394,22 @@ footer > .logo {
 /*4th section*/
 /*our team */
 
-.section-our-team {
+.sectionourteam {
   background-color: var(--cloud);
   margin-top: 120px;
-  width: auto;
+  width: 1440px;
   height: 732px;
   flex-shrink: 0;
   margin-bottom: 0px;
 }
 
 .container-4 {
-  margin-left: 156px;
+  margin-left: 30px;
   margin-right: auto;
-  width: auto;
+  width: 1158px;
   height: 732px;
+  justify-content: center;
+  align-self: center;
 }
 
 .container-4 > .list {
@@ -456,18 +461,18 @@ footer > .logo {
 .portfolio {
   border-bottom: 1px solid #ececec;
   display: flex;
-  width: auto;
+  width: 1158px;
   height: 420px;
   flex-shrink: 0;
   margin-bottom: 1056px;
   margin-top: 400px;
+  align-items: center;
+  justify-content: center;
 }
 
-.portcontainer1,
-.portcontainer2,
-.portcontainer3 {
+.portcontainer1 {
   display: flex;
-  border-radius: 1px;
+  border-bottom: 1px;
   width: 360px;
   height: 420px;
   padding-bottom: 0px;
@@ -478,28 +483,98 @@ footer > .logo {
   margin-bottom: 48px;
   justify-content: center;
 }
-.portcontainer1 > .list,
-.portcontainer2 > .list,
-.portcontainer3 > .list {
-  margin-left: 24px;
+.portcontainer2 {
+  display: flex;
+  border-bottom: 1px;
+  width: 360px;
+  height: 420px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+  margin-bottom: 48px;
+  justify-content: center;
+}
+.portcontainer3 {
+  display: flex;
+  border-bottom: 1px;
+  width: 360px;
+  height: 420px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+  margin-bottom: 48px;
+  justify-content: center;
+}
+.portcontainer1 > .list {
+  margin-left: 15px;
   padding: 0px 16px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+  border-bottom: 1px solid;
 }
-
-.portcontainer1 > .list > img,
-.portcontainer2 > .list > img,
-.portcontainer3 > .list > img {
+.portcontainer2 > .list {
+  margin-left: 15px;
+  padding: 0px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-bottom: 1px solid;
+}
+.portcontainer3 > .list {
+  margin-left: 15px;
+  padding: 0px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-bottom: 1px solid;
+}
+.portcontainer1 > .list > img {
+  width: 360px;
+  height: 300px;
+  flex-shrink: 0;
+}
+.portcontainer2 > .list > img {
   width: 360px;
   height: 300px;
   flex-shrink: 0;
 }
 
-.portcontainer1 > .list > h3,
-.portcontainer2 > .list > h3,
+.portcontainer3 > .list > img {
+  width: 360px;
+  height: 300px;
+  flex-shrink: 0;
+}
+.portcontainer1 > .list > h3 {
+  color: var(--navyblue);
+  font-family: var(--font-family-roboto);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+.portcontainer2 > .list > h3 {
+  color: var(--navyblue);
+  font-family: var(--font-family-roboto);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
 .portcontainer3 > .list > h3 {
   color: var(--navyblue);
   font-family: var(--font-family-roboto);
@@ -510,10 +585,17 @@ footer > .logo {
   letter-spacing: 0.4px;
   margin: 0;
 }
-
-.portcontainer1 > .list > p,
-.portcontainer2 > .list > p,
-.portcontainer3 > .list > p {
+.portcontainer1 > .list > p {
+  margin: 0;
+  font-family: var(--font-family-roboto);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--slate);
+  letter-spacing: 0.32px;
+}
+.portcontainer2 > .list > p {
   margin: 0;
   font-family: var(--font-family-roboto);
   font-size: 16px;
@@ -524,6 +606,16 @@ footer > .logo {
   letter-spacing: 0.32px;
 }
 
+.portcontainer3 > .list > p {
+  margin: 0;
+  font-family: var(--font-family-roboto);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--slate);
+  letter-spacing: 0.32px;
+}
 /*
 
 .container-menu,
